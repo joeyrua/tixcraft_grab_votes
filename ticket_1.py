@@ -64,7 +64,7 @@ time.sleep(1)
 wait.until(lambda driver: driver.find_element(
     "xpath", "/html/body/div[1]/section/div/div/div/ul/li[1]"))
 select_now_buy = URL.find_element(
-    "xpath", "/html/body/div[1]/section/div/div/div/ul/li[1]").click()#選擇現在購買
+    "xpath", "/html/body/div[1]/section/div/div/div/ul/li[1]").click()#現在購買
 
 time.sleep(1)
 URL.execute_script("window.scrollTo(0,500)")  # 往下滑動
@@ -89,7 +89,7 @@ down = URL.find_element(
 wait.until(lambda driver: driver.find_element(
     "xpath", "/html/body/div[1]/div[2]/div[2]/div/form/div[1]/table/tbody/tr[1]/td[2]/select/option[5]"))
 four_sheet = URL.find_element(
-    "xpath", "/html/body/div[1]/div[2]/div[2]/div/form/div[1]/table/tbody/tr[1]/td[2]/select/option[5]").click()#選擇五個位子
+    "xpath", "/html/body/div[1]/div[2]/div[2]/div/form/div[1]/table/tbody/tr[1]/td[2]/select/option[5]").click()#選擇四個位子
 
 ActionChains(URL).move_by_offset(0,0).click().perform()#按下空白區
 
